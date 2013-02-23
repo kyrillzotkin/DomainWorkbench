@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.applications"
+         id="ClassMakerEditorAdvisorApplication">
+      <application>
+         <run class="org.classmaker.presentation.ClassMakerEditorAdvisor$Application"/>
+      </application>
+   </extension>
+
+   <extension point="org.eclipse.ui.perspectives">
+      <perspective
+            name="%_UI_Perspective_label"
+            class="org.classmaker.presentation.ClassMakerEditorAdvisor$Perspective"
+            id="org.classmaker.presentation.ClassMakerEditorAdvisorPerspective">
+      </perspective>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <command
+            name="%_UI_Menu_OpenURI_label"
+            description="%_UI_Menu_OpenURI_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="org.classmaker.presentation.ClassMakerEditorAdvisorOpenURICommand"/>
+      <command
+            name="%_UI_Menu_Open_label"
+            description="%_UI_Menu_Open_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="org.classmaker.presentation.ClassMakerEditorAdvisorOpenCommand"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+      <key
+            commandId="org.classmaker.presentation.ClassMakerEditorAdvisorOpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="org.classmaker.presentation.ClassMakerEditorAdvisorOpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="%_UI_ClassMakerEditorAdvisor_ActionSet_label"
+            visible="true"
+            id="ClassMakerEditorAdvisorActionSet">
+         <action
+               label="%_UI_Menu_About_label"
+               class="org.classmaker.presentation.ClassMakerEditorAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="org.classmaker.presentation.ClassMakerEditorAdvisorAboutAction"/>
+         <action
+               label="%_UI_Menu_OpenURI_label"
+               definitionId="org.classmaker.presentation.ClassMakerEditorAdvisorOpenURICommand"
+               class="org.classmaker.presentation.ClassMakerEditorAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="org.classmaker.presentation.ClassMakerEditorAdvisorOpenURIAction"/>
+         <action
+               label="%_UI_Menu_Open_label"
+               definitionId="org.classmaker.presentation.ClassMakerEditorAdvisorOpenCommand"
+               class="org.classmaker.presentation.ClassMakerEditorAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="org.classmaker.presentation.ClassMakerEditorAdvisorOpenAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="%_UI_ClassMakerModelWizard_ActionSet_label"
+            visible="true"
+            id="org.classmaker.presentation.ClassMakerActionBarContributorActionSet">
+         <action
+               label="%_UI_ClassMakerModelWizard_label"
+               class="org.classmaker.presentation.ClassMakerActionBarContributor$NewAction"
+               menubarPath="file/new/additions"
+               id="org.classmaker.presentation.ClassMakerActionBarContributorNewAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.classmaker.presentation.ClassMakerEditorID"
+            name="%_UI_ClassMakerEditor_label"
+            icon="icons/full/obj16/ClassMakerModelFile.gif"
+            extensions="classmaker"
+            class="org.classmaker.presentation.ClassMakerEditor"
+            contributorClass="org.classmaker.presentation.ClassMakerActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

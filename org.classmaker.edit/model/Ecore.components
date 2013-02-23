@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eef-components="http://www.eclipse.org/emf/eef/components/1.0.0" xmlns:eef-views="http://www.eclipse.org/emf/eef/views/1.0.0">
+  <eef-components:PropertiesEditionContext xmi:id="_fND-AHXDEeKuntjOFEISCw" documentation="Edition Context for ecore GenPackage">
+    <categories xmi:id="_fND-AXXDEeKuntjOFEISCw" name="ecore">
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-AnXDEeKuntjOFEISCw" name="EAttribute" views="_fNElQXXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-A3XDEeKuntjOFEISCw" name="name" views="_fNElQ3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-BHXDEeKuntjOFEISCw" name="ordered" views="_fNElRHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/ordered"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-BXXDEeKuntjOFEISCw" name="unique" views="_fNElRXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/unique"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-BnXDEeKuntjOFEISCw" name="lowerBound" views="_fNElRnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/lowerBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-B3XDEeKuntjOFEISCw" name="upperBound" views="_fNElR3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/upperBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-CHXDEeKuntjOFEISCw" name="eType" views="_fNElSHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/eType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-CXXDEeKuntjOFEISCw" name="changeable" views="_fNElSXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/changeable"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-CnXDEeKuntjOFEISCw" name="volatile" views="_fNElSnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/volatile"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-C3XDEeKuntjOFEISCw" name="transient" views="_fNElS3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/transient"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-DHXDEeKuntjOFEISCw" name="defaultValueLiteral" views="_fNFMIHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/defaultValueLiteral"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-DXXDEeKuntjOFEISCw" name="unsettable" views="_fNFMIXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/unsettable"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-DnXDEeKuntjOFEISCw" name="derived" views="_fNFMInXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/derived"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-D3XDEeKuntjOFEISCw" name="eContainingClass" views="_fNFMI3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/eContainingClass"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-EHXDEeKuntjOFEISCw" name="iD" views="_fNFMJHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAttribute/iD"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAttribute"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-EXXDEeKuntjOFEISCw" name="EAnnotation" views="_fNFMJXXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-EnXDEeKuntjOFEISCw" name="source" views="_fNFMJ3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/source"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-E3XDEeKuntjOFEISCw" name="details" views="_fNFMKHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/details"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-FHXDEeKuntjOFEISCw" name="eModelElement" views="_fNFMKXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/eModelElement"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-FXXDEeKuntjOFEISCw" name="contents" views="_fNFMKnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/contents"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-FnXDEeKuntjOFEISCw" name="references" views="_fNFMK3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation/references"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-F3XDEeKuntjOFEISCw" name="EClass" views="_fNFMLHXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-GHXDEeKuntjOFEISCw" name="name" views="_fNFMLnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-GXXDEeKuntjOFEISCw" name="instanceClassName" views="_fNFML3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceClassName"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-GnXDEeKuntjOFEISCw" name="instanceTypeName" views="_fNFMMHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceTypeName"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-G3XDEeKuntjOFEISCw" name="ePackage" views="_fNFMMXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/ePackage"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-HHXDEeKuntjOFEISCw" name="abstract" views="_fNFMMnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/abstract"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-HXXDEeKuntjOFEISCw" name="interface" views="_fNFMM3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/interface"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-HnXDEeKuntjOFEISCw" name="eSuperTypes" views="_fNFMNHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eSuperTypes"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-H3XDEeKuntjOFEISCw" name="eGenericSuperTypes" views="_fNFMNXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass/eGenericSuperTypes"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-IHXDEeKuntjOFEISCw" name="EDataType" views="_fNFMNnXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-IXXDEeKuntjOFEISCw" name="name" views="_fNFMOHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-InXDEeKuntjOFEISCw" name="instanceClassName" views="_fNFMOXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceClassName"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-I3XDEeKuntjOFEISCw" name="instanceTypeName" views="_fNFMOnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceTypeName"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-JHXDEeKuntjOFEISCw" name="ePackage" views="_fNFMO3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/ePackage"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-JXXDEeKuntjOFEISCw" name="serializable" views="_fNFMPHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDataType/serializable"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDataType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-JnXDEeKuntjOFEISCw" name="EEnum" views="_fNFMPXXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-J3XDEeKuntjOFEISCw" name="name" views="_fNFMP3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-KHXDEeKuntjOFEISCw" name="instanceClassName" views="_fNFMQHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceClassName"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-KXXDEeKuntjOFEISCw" name="instanceTypeName" views="_fNFMQXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/instanceTypeName"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-KnXDEeKuntjOFEISCw" name="ePackage" views="_fNFMQnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClassifier/ePackage"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-K3XDEeKuntjOFEISCw" name="serializable" views="_fNFMQ3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EDataType/serializable"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnum"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-LHXDEeKuntjOFEISCw" name="EEnumLiteral" views="_fNFMRHXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-LXXDEeKuntjOFEISCw" name="name" views="_fNFMRnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-LnXDEeKuntjOFEISCw" name="value" views="_fNFMR3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/value"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-L3XDEeKuntjOFEISCw" name="instance" views="_fNFMSHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/instance"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-MHXDEeKuntjOFEISCw" name="literal" views="_fNFMSXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/literal"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-MXXDEeKuntjOFEISCw" name="eEnum" views="_fNFMSnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral/eEnum"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EEnumLiteral"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-MnXDEeKuntjOFEISCw" name="EFactory" views="_fNFMS3XDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-M3XDEeKuntjOFEISCw" name="ePackage" views="_fNFMTXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory/ePackage"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EFactory"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-NHXDEeKuntjOFEISCw" name="EObject" views="_fNFMTnXDEeKuntjOFEISCw">
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fND-NXXDEeKuntjOFEISCw" name="EOperation" views="_fNFMT3XDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-NnXDEeKuntjOFEISCw" name="name" views="_fNFMUXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-N3XDEeKuntjOFEISCw" name="ordered" views="_fNFMUnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/ordered"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-OHXDEeKuntjOFEISCw" name="unique" views="_fNFMU3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/unique"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fND-OXXDEeKuntjOFEISCw" name="lowerBound" views="_fNFMVHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/lowerBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElEHXDEeKuntjOFEISCw" name="upperBound" views="_fNFMVXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/upperBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElEXXDEeKuntjOFEISCw" name="eType" views="_fNFMVnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/eType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElEnXDEeKuntjOFEISCw" name="eContainingClass" views="_fNFMV3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eContainingClass"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElE3XDEeKuntjOFEISCw" name="eExceptions" views="_fNFMWHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eExceptions"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElFHXDEeKuntjOFEISCw" name="eGenericExceptions" views="_fNFMWXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation/eGenericExceptions"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EOperation"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fNElFXXDEeKuntjOFEISCw" name="EPackage" views="_fNFMWnXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElFnXDEeKuntjOFEISCw" name="name" views="_fNFMXHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElF3XDEeKuntjOFEISCw" name="nsURI" views="_fNFMXXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/nsURI"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElGHXDEeKuntjOFEISCw" name="nsPrefix" views="_fNFzMHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/nsPrefix"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElGXXDEeKuntjOFEISCw" name="eFactoryInstance" views="_fNFzMXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/eFactoryInstance"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElGnXDEeKuntjOFEISCw" name="eSuperPackage" views="_fNFzMnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage/eSuperPackage"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fNElG3XDEeKuntjOFEISCw" name="EParameter" views="_fNFzM3XDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElHHXDEeKuntjOFEISCw" name="name" views="_fNFzNXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElHXXDEeKuntjOFEISCw" name="ordered" views="_fNFzNnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/ordered"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElHnXDEeKuntjOFEISCw" name="unique" views="_fNFzN3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/unique"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElH3XDEeKuntjOFEISCw" name="lowerBound" views="_fNFzOHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/lowerBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElIHXDEeKuntjOFEISCw" name="upperBound" views="_fNFzOXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/upperBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElIXXDEeKuntjOFEISCw" name="eType" views="_fNFzOnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/eType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElInXDEeKuntjOFEISCw" name="eOperation" views="_fNFzO3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EParameter/eOperation"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EParameter"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fNElI3XDEeKuntjOFEISCw" name="EReference" views="_fNFzPHXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElJHXDEeKuntjOFEISCw" name="name" views="_fNFzPnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElJXXDEeKuntjOFEISCw" name="ordered" views="_fNFzP3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/ordered"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElJnXDEeKuntjOFEISCw" name="unique" views="_fNFzQHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/unique"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElJ3XDEeKuntjOFEISCw" name="lowerBound" views="_fNFzQXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/lowerBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElKHXDEeKuntjOFEISCw" name="upperBound" views="_fNFzQnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/upperBound"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElKXXDEeKuntjOFEISCw" name="eType" views="_fNFzQ3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypedElement/eType"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElKnXDEeKuntjOFEISCw" name="changeable" views="_fNFzRHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/changeable"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElK3XDEeKuntjOFEISCw" name="volatile" views="_fNFzRXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/volatile"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElLHXDEeKuntjOFEISCw" name="transient" views="_fNFzRnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/transient"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElLXXDEeKuntjOFEISCw" name="defaultValueLiteral" views="_fNFzR3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/defaultValueLiteral"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElLnXDEeKuntjOFEISCw" name="unsettable" views="_fNFzSHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/unsettable"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElL3XDEeKuntjOFEISCw" name="derived" views="_fNFzSXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/derived"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElMHXDEeKuntjOFEISCw" name="eContainingClass" views="_fNFzSnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStructuralFeature/eContainingClass"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElMXXDEeKuntjOFEISCw" name="containment" views="_fNFzS3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/containment"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElMnXDEeKuntjOFEISCw" name="resolveProxies" views="_fNFzTHXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/resolveProxies"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElM3XDEeKuntjOFEISCw" name="eOpposite" views="_fNFzTXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/eOpposite"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElNHXDEeKuntjOFEISCw" name="eKeys" views="_fNFzTnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference/eKeys"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fNElNXXDEeKuntjOFEISCw" name="EStringToStringMapEntry" views="_fNFzT3XDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElNnXDEeKuntjOFEISCw" name="key" views="_fNFzUXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStringToStringMapEntry/key"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElN3XDEeKuntjOFEISCw" name="value" views="_fNFzUnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStringToStringMapEntry/value"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EStringToStringMapEntry"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fNElOHXDEeKuntjOFEISCw" name="EGenericType" views="_fNFzU3XDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElOXXDEeKuntjOFEISCw" name="eTypeArguments" views="_fNFzVXXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eTypeArguments"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElOnXDEeKuntjOFEISCw" name="eTypeParameter" views="_fNFzVnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eTypeParameter"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElO3XDEeKuntjOFEISCw" name="eClassifier" views="_fNFzV3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType/eClassifier"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EGenericType"/>
+      </bindings>
+      <bindings xsi:type="eef-components:PropertiesEditionComponent" xmi:id="_fNElPHXDEeKuntjOFEISCw" name="ETypeParameter" views="_fNFzWHXDEeKuntjOFEISCw">
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElPXXDEeKuntjOFEISCw" name="name" views="_fNFzWnXDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EAttribute" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ENamedElement/name"/>
+        </properties>
+        <properties xsi:type="eef-components:PropertiesEditionElement" xmi:id="_fNElPnXDEeKuntjOFEISCw" name="eBounds" views="_fNFzW3XDEeKuntjOFEISCw">
+          <model xsi:type="ecore:EReference" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypeParameter/eBounds"/>
+        </properties>
+        <model xsi:type="ecore:EClass" href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//ETypeParameter"/>
+      </bindings>
+    </categories>
+    <model href="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"/>
+  </eef-components:PropertiesEditionContext>
+  <eef-views:ViewsRepository xmi:id="_fNElP3XDEeKuntjOFEISCw" documentation="Views repository for ecore GenPackage" name="ecore">
+    <RepositoryKind>SWT</RepositoryKind>
+    <RepositoryKind>Form</RepositoryKind>
+    <categories xmi:id="_fNElQHXDEeKuntjOFEISCw" name="ecore">
+      <views xmi:id="_fNElQXXDEeKuntjOFEISCw" name="EAttribute">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNElQnXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElQ3XDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElRHXDEeKuntjOFEISCw" name="ordered">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElRXXDEeKuntjOFEISCw" name="unique">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElRnXDEeKuntjOFEISCw" name="lowerBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElR3XDEeKuntjOFEISCw" name="upperBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElSHXDEeKuntjOFEISCw" name="eType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElSXXDEeKuntjOFEISCw" name="changeable">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElSnXDEeKuntjOFEISCw" name="volatile">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNElS3XDEeKuntjOFEISCw" name="transient">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMIHXDEeKuntjOFEISCw" name="defaultValueLiteral">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMIXXDEeKuntjOFEISCw" name="unsettable">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMInXDEeKuntjOFEISCw" name="derived">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMI3XDEeKuntjOFEISCw" name="eContainingClass">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMJHXDEeKuntjOFEISCw" name="iD">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMJXXDEeKuntjOFEISCw" name="EAnnotation">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMJnXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMJ3XDEeKuntjOFEISCw" name="source">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMKHXDEeKuntjOFEISCw" name="details">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMKXXDEeKuntjOFEISCw" name="eModelElement">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMKnXDEeKuntjOFEISCw" name="contents">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMK3XDEeKuntjOFEISCw" name="references">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMLHXDEeKuntjOFEISCw" name="EClass">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMLXXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMLnXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFML3XDEeKuntjOFEISCw" name="instanceClassName">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMMHXDEeKuntjOFEISCw" name="instanceTypeName">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMMXXDEeKuntjOFEISCw" name="ePackage">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMMnXDEeKuntjOFEISCw" name="abstract">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMM3XDEeKuntjOFEISCw" name="interface">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMNHXDEeKuntjOFEISCw" name="eSuperTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMNXXDEeKuntjOFEISCw" name="eGenericSuperTypes">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMNnXDEeKuntjOFEISCw" name="EDataType">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMN3XDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMOHXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMOXXDEeKuntjOFEISCw" name="instanceClassName">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMOnXDEeKuntjOFEISCw" name="instanceTypeName">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMO3XDEeKuntjOFEISCw" name="ePackage">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMPHXDEeKuntjOFEISCw" name="serializable">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMPXXDEeKuntjOFEISCw" name="EEnum">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMPnXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMP3XDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMQHXDEeKuntjOFEISCw" name="instanceClassName">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMQXXDEeKuntjOFEISCw" name="instanceTypeName">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMQnXDEeKuntjOFEISCw" name="ePackage">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMQ3XDEeKuntjOFEISCw" name="serializable">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMRHXDEeKuntjOFEISCw" name="EEnumLiteral">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMRXXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMRnXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMR3XDEeKuntjOFEISCw" name="value">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMSHXDEeKuntjOFEISCw" name="instance">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMSXXDEeKuntjOFEISCw" name="literal">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMSnXDEeKuntjOFEISCw" name="eEnum">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMS3XDEeKuntjOFEISCw" name="EFactory">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMTHXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMTXXDEeKuntjOFEISCw" name="ePackage">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMTnXDEeKuntjOFEISCw" name="EObject"/>
+      <views xmi:id="_fNFMT3XDEeKuntjOFEISCw" name="EOperation">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMUHXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMUXXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMUnXDEeKuntjOFEISCw" name="ordered">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMU3XDEeKuntjOFEISCw" name="unique">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMVHXDEeKuntjOFEISCw" name="lowerBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMVXXDEeKuntjOFEISCw" name="upperBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMVnXDEeKuntjOFEISCw" name="eType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMV3XDEeKuntjOFEISCw" name="eContainingClass">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMWHXDEeKuntjOFEISCw" name="eExceptions">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMWXXDEeKuntjOFEISCw" name="eGenericExceptions">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFMWnXDEeKuntjOFEISCw" name="EPackage">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFMW3XDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMXHXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFMXXXDEeKuntjOFEISCw" name="nsURI">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzMHXDEeKuntjOFEISCw" name="nsPrefix">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzMXXDEeKuntjOFEISCw" name="eFactoryInstance">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzMnXDEeKuntjOFEISCw" name="eSuperPackage">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFzM3XDEeKuntjOFEISCw" name="EParameter">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFzNHXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzNXXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzNnXDEeKuntjOFEISCw" name="ordered">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzN3XDEeKuntjOFEISCw" name="unique">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzOHXDEeKuntjOFEISCw" name="lowerBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzOXXDEeKuntjOFEISCw" name="upperBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzOnXDEeKuntjOFEISCw" name="eType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzO3XDEeKuntjOFEISCw" name="eOperation">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFzPHXDEeKuntjOFEISCw" name="EReference">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFzPXXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzPnXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzP3XDEeKuntjOFEISCw" name="ordered">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzQHXDEeKuntjOFEISCw" name="unique">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzQXXDEeKuntjOFEISCw" name="lowerBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzQnXDEeKuntjOFEISCw" name="upperBound">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzQ3XDEeKuntjOFEISCw" name="eType">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzRHXDEeKuntjOFEISCw" name="changeable">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzRXXDEeKuntjOFEISCw" name="volatile">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzRnXDEeKuntjOFEISCw" name="transient">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzR3XDEeKuntjOFEISCw" name="defaultValueLiteral">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzSHXDEeKuntjOFEISCw" name="unsettable">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzSXXDEeKuntjOFEISCw" name="derived">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzSnXDEeKuntjOFEISCw" name="eContainingClass">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzS3XDEeKuntjOFEISCw" name="containment">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzTHXDEeKuntjOFEISCw" name="resolveProxies">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.1"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzTXXDEeKuntjOFEISCw" name="eOpposite">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzTnXDEeKuntjOFEISCw" name="eKeys">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.8"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFzT3XDEeKuntjOFEISCw" name="EStringToStringMapEntry">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFzUHXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzUXXDEeKuntjOFEISCw" name="key">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzUnXDEeKuntjOFEISCw" name="value">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFzU3XDEeKuntjOFEISCw" name="EGenericType">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFzVHXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzVXXDEeKuntjOFEISCw" name="eTypeArguments">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzVnXDEeKuntjOFEISCw" name="eTypeParameter">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzV3XDEeKuntjOFEISCw" name="eClassifier">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.0"/>
+          </elements>
+        </elements>
+      </views>
+      <views xmi:id="_fNFzWHXDEeKuntjOFEISCw" name="ETypeParameter">
+        <elements xsi:type="eef-views:Container" xmi:id="_fNFzWXXDEeKuntjOFEISCw" name="properties">
+          <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.4"/>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzWnXDEeKuntjOFEISCw" name="name">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/SWT.toolkits#//@widgets.0"/>
+          </elements>
+          <elements xsi:type="eef-views:ElementEditor" xmi:id="_fNFzW3XDEeKuntjOFEISCw" name="eBounds">
+            <representation href="platform:/plugin/org.eclipse.emf.eef.views/std/EMFProperties.toolkits#//@widgets.7"/>
+          </elements>
+        </elements>
+      </views>
+    </categories>
+  </eef-views:ViewsRepository>
+</xmi:XMI>
