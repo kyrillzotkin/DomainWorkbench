@@ -38,8 +38,6 @@ public class ContextParameterValueConverter extends
 	@Override
 	public String convertToString(Object parameterValue)
 			throws ParameterValueConversionException {
-		String result = String.valueOf(parameterValue.hashCode());
-		context.set(result, parameterValue);
-		return result;
+		return parameterValue.toString();		
 	}
 }

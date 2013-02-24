@@ -14,16 +14,10 @@ import org.eclipse.e4.core.commands.ECommandService;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.AboutToHide;
 import org.eclipse.e4.ui.di.AboutToShow;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.commands.MCommandParameter;
-import org.eclipse.e4.ui.model.application.commands.MCommandsFactory;
-import org.eclipse.e4.ui.model.application.commands.MParameter;
 import org.eclipse.e4.ui.model.application.ui.menu.MHandledMenuItem;
 import org.eclipse.e4.ui.model.application.ui.menu.MMenuElement;
 import org.eclipse.e4.ui.model.application.ui.menu.MMenuFactory;
 import org.eclipse.e4.ui.services.IServiceConstants;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
 import org.eclipse.emf.common.command.Command;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.edit.command.CommandParameter;
@@ -42,12 +36,6 @@ public class CreateChildContribution {
 
 	@Inject
 	protected ECommandService commandService;
-
-	@Inject
-	protected EModelService modelService;
-
-	@Inject
-	protected MApplication app;
 
 	private EObject eObject;
 
@@ -78,22 +66,7 @@ public class CreateChildContribution {
 				MHandledMenuItem menuItem = MMenuFactory.INSTANCE
 						.createHandledMenuItem();
 				menuItem.setLabel(emfCommand.getLabel());
-				MCommand modeledCommand = (MCommand) modelService.find(
-						"org.domainworkbench.command.createChild", app);
-				menuItem.setCommand(modeledCommand);
 				menuItem.setContributorURI("platform:/plugin/org.domainworkbench");
-				MParameter parameter = MCommandsFactory.INSTANCE
-						.createParameter();
-				parameter
-						.setName("org.domainworkbench.commandparameter.emfCommand");
-				parameter.setValue(String.valueOf(emfCommand.hashCode()));
-				menuItem.getParameters().add(parameter);
-				parameter = MCommandsFactory.INSTANCE.createParameter();
-				parameter
-						.setName("org.domainworkbench.commandparameter.emfFeature");
-				parameter.setValue(String.valueOf(emfFeature.hashCode()));
-				menuItem.getParameters().add(parameter);
-
 				Map<String, Object> parameters = new HashMap<String, Object>();
 				parameters.put(
 						"org.domainworkbench.commandparameter.emfCommand",
