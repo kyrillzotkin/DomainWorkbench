@@ -4,9 +4,6 @@ import org.eclipse.core.commands.AbstractParameterValueConverter;
 import org.eclipse.core.commands.ParameterValueConversionException;
 import org.eclipse.e4.core.contexts.EclipseContextFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.FrameworkUtil;
 
 public class ContextParameterValueConverter extends
 		AbstractParameterValueConverter {
@@ -20,13 +17,6 @@ public class ContextParameterValueConverter extends
 
 	private IEclipseContext createContext() {
 		return context = EclipseContextFactory.create();
-
-		// Bundle bundle = FrameworkUtil
-		// .getBundle(ContextParameterValueConverter.class);
-		// BundleContext bundleContext = bundle.getBundleContext();
-		// IEclipseContext serviceContext = EclipseContextFactory
-		// .getServiceContext(bundleContext);
-		// return serviceContext.getActiveLeaf();
 	}
 
 	@Override
@@ -38,6 +28,9 @@ public class ContextParameterValueConverter extends
 	@Override
 	public String convertToString(Object parameterValue)
 			throws ParameterValueConversionException {
-		return parameterValue.toString();		
+		String result = parameterValue.getClass().getName() + "@"
+				+ parameterValue.hashCode();
+		context.set(result, parameterValue);
+		return result;
 	}
 }

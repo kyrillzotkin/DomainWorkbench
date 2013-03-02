@@ -15,15 +15,13 @@ public class CreateChildHandler {
 
 	@Execute
 	public void execute(
-			@Named("org.domainworkbench.commandparameter.emfCommand") String emfCommand,// Command
-																						// emfCommand,
-			@Named("org.domainworkbench.commandparameter.emfFeature") Object feature
-	) {
+			@Named("org.domainworkbench.commandparameter.emfCommand") Command emfCommand,
+			@Named("org.domainworkbench.commandparameter.emfFeature") Object feature) {
 		// emfCommand.execute();
-		System.out.println(emfCommand + "\n\t" + feature.toString());
+//		System.out.println(emfCommand + "\n\t" + feature.toString());
 		// System.out.println(emfCommand.getLabel() + " "
 		// + emfCommand.getDescription());
-		// System.out.println(emfCommand.getResult() + " " + feature);
+		 System.out.println(emfCommand.getResult() + " " + feature.toString());
 
 	}
 }
