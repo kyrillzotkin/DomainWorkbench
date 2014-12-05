@@ -7,7 +7,8 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages/>
@@ -21,10 +22,9 @@
       <plugin id="org.apache.batik.util"/>
       <plugin id="org.apache.batik.util.gui"/>
       <plugin id="org.apache.commons.logging"/>
-      <plugin id="org.classmaker"/>
-      <plugin id="org.classmaker.edit"/>
-      <plugin id="org.classmaker.editor"/>
-      <plugin id="org.classmaker.test" fragment="true"/>
+      <plugin id="org.classupplier"/>
+      <plugin id="org.classupplier.edit"/>
+      <plugin id="org.classupplier.editor"/>
       <plugin id="org.domainworkbench"/>
       <plugin id="org.eclipse.ant.core"/>
       <plugin id="org.eclipse.core.commands"/>

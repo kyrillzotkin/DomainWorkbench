@@ -1,6 +1,6 @@
 package org.domainworkbench.wizards;
 
-import org.classmaker.ClassMaker;
+import org.classupplier.ClassSupplier;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.jface.wizard.Wizard;
@@ -9,10 +9,13 @@ public class NewEPackageWizard extends Wizard {
 
 	EPackageWizardPage page;
 
-	public NewEPackageWizard(){
+	private ClassSupplier classuplier;
+
+	public NewEPackageWizard(ClassSupplier classuplier) {
+		this.classuplier = classuplier;
 		setNeedsProgressMonitor(true);
 	}
-	
+
 	@Override
 	public void addPages() {
 		page = new EPackageWizardPage();
@@ -26,8 +29,7 @@ public class NewEPackageWizard extends Wizard {
 		ePackage.setName(page.getName());
 		ePackage.setNsPrefix(page.getNsPrefix());
 		ePackage.setNsURI(page.getNsURI());
-		// TODO report progress
-		ClassMaker.getInstance().addEPackage(ePackage);
+		classuplier.getWorkspace().createArtefact(ePackage);
 		return true;
 	}
 

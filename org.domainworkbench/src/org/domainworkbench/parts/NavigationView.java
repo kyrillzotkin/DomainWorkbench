@@ -8,25 +8,27 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.classmaker.ClassMaker;
-import org.classmaker.ModelWorkspace;
+import org.classupplier.ClassSupplier;
+import org.classupplier.provider.ClassSupplierItemProviderAdapterFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.ui.di.Focus;
+import org.eclipse.e4.ui.services.EMenuService;
 import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
-import org.eclipse.e4.ui.workbench.swt.modeling.EMenuService;
 import org.eclipse.emf.common.command.BasicCommandStack;
 import org.eclipse.emf.common.command.Command;
 import org.eclipse.emf.common.command.CommandStack;
 import org.eclipse.emf.common.command.CommandStackListener;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.impl.AdapterImpl;
+import org.eclipse.emf.ecore.provider.EcoreItemProviderAdapterFactory;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.edit.domain.AdapterFactoryEditingDomain;
 import org.eclipse.emf.edit.domain.EditingDomain;
 import org.eclipse.emf.edit.domain.IEditingDomainProvider;
 import org.eclipse.emf.edit.provider.ComposedAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
+import org.eclipse.emf.edit.provider.ReflectiveItemProviderAdapterFactory;
 import org.eclipse.emf.edit.ui.provider.AdapterFactoryContentProvider;
 import org.eclipse.emf.edit.ui.provider.AdapterFactoryLabelProvider;
 import org.eclipse.jface.viewers.DecoratingLabelProvider;
@@ -58,7 +60,10 @@ public class NavigationView implements IEditingDomainProvider {
 	protected ESelectionService selectionService;
 
 	@Inject
-	EMenuService menuService;
+	protected ClassSupplier classupplier;
+
+	@Inject
+	protected EMenuService menuService;
 
 	public NavigationView() {
 		initializeEditingDomain();
@@ -68,31 +73,27 @@ public class NavigationView implements IEditingDomainProvider {
 	public void createControls(Composite parent, final IEclipseContext context) {
 		parent.setLayout(new FillLayout(SWT.HORIZONTAL));
 		viewer = new TreeViewer(parent, SWT.BORDER);
-		ModelWorkspace input = ClassMaker.getInstance().getWorkspace();
+		viewer.setContentProvider(new AdapterFactoryContentProvider(
+				adapterFactory));
+		viewer.setLabelProvider(new DecoratingLabelProvider(
+				new AdapterFactoryLabelProvider(adapterFactory),
+				(ILabelDecorator) new ArtefactStageDecorator()));
+		viewer.setInput(classupplier.getWorkspace());
 
-		AdapterFactoryContentProvider contentProvider = new AdapterFactoryContentProvider(
-				adapterFactory);
-		AdapterFactoryLabelProvider labelProvider = new AdapterFactoryLabelProvider(
-				adapterFactory);
-		viewer.setContentProvider(contentProvider);
-		viewer.setLabelProvider(new DecoratingLabelProvider(labelProvider,
-				(ILabelDecorator) new BundleStateDecorator()));
-		viewer.setInput(input);
-		ClassMaker.getInstance().getWorkspace()
-				.addRefreshListener(new AdapterImpl() {
+		classupplier.getWorkspace().eAdapters().add(new AdapterImpl() {
+
+			@Override
+			public void notifyChanged(Notification msg) {
+				Display.getCurrent().asyncExec(new Runnable() {
 
 					@Override
-					public void notifyChanged(Notification msg) {
-						Display.getCurrent().asyncExec(new Runnable() {
-
-							@Override
-							public void run() {
-								viewer.refresh();
-							}
-						});
+					public void run() {
+						viewer.refresh();
 					}
-
 				});
+			}
+
+		});
 		viewer.addSelectionChangedListener(new ISelectionChangedListener() {
 
 			@Override
@@ -140,7 +141,11 @@ public class NavigationView implements IEditingDomainProvider {
 	protected void initializeEditingDomain() {
 		adapterFactory = new ComposedAdapterFactory(
 				ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
-
+		adapterFactory
+				.addAdapterFactory(new ClassSupplierItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new EcoreItemProviderAdapterFactory());
+		adapterFactory
+				.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 		BasicCommandStack commandStack = new BasicCommandStack();
 
 		commandStack.addCommandStackListener(new CommandStackListener() {

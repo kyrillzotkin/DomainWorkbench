@@ -5,8 +5,7 @@ import org.eclipse.core.commands.ParameterValueConversionException;
 import org.eclipse.e4.core.contexts.EclipseContextFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 
-public class ContextParameterValueConverter extends
-		AbstractParameterValueConverter {
+public class ContextParameterValueConverter extends AbstractParameterValueConverter {
 
 	protected IEclipseContext context;
 

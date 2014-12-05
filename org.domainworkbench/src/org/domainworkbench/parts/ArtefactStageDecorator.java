@@ -1,11 +1,11 @@
 package org.domainworkbench.parts;
 
-import org.classmaker.Bundle;
+import org.classupplier.Artefact;
 import org.eclipse.jface.viewers.ILabelDecorator;
 import org.eclipse.jface.viewers.ILabelProviderListener;
 import org.eclipse.swt.graphics.Image;
 
-public class BundleStateDecorator implements ILabelDecorator {
+public class ArtefactStageDecorator implements ILabelDecorator {
 
 	@Override
 	public void addListener(ILabelProviderListener listener) {
@@ -34,9 +34,9 @@ public class BundleStateDecorator implements ILabelDecorator {
 
 	@Override
 	public String decorateText(String text, Object element) {
-		if (element instanceof Bundle) {
+		if (element instanceof Artefact) {
 			return text + " ["
-					+ ((Bundle) element).getState().toString().toLowerCase()
+					+ ((Artefact) element).getStage().toString().toLowerCase()
 					+ "]";
 		}
 		return null;
