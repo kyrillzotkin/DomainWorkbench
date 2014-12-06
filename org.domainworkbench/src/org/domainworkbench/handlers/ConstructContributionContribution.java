@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.classupplier.Artefact;
+import org.classupplier.Contribution;
 import org.eclipse.core.commands.Command;
 import org.eclipse.core.commands.ParameterizedCommand;
 import org.eclipse.e4.core.commands.ECommandService;
@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.edit.domain.IEditingDomainProvider;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 
-public class ProduceArtefactContribution {
+public class ConstructContributionContribution {
 
 	@Inject
 	protected IEditingDomainProvider editingDomainProvider;
@@ -46,13 +46,13 @@ public class ProduceArtefactContribution {
 	@AboutToShow
 	public void aboutToShow(List<MMenuElement> items) {
 		items.clear();
-		if (eObject == null || !(eObject instanceof Artefact))
+		if (eObject == null || !(eObject instanceof Contribution))
 			return;
 		Map<String, Object> parameters = new HashMap<String, Object>();
-		parameters.put("org.domainworkbench.commandparameter.artefact",
-				(Artefact) eObject);
+		parameters.put("org.domainworkbench.commandparameter.contribution",
+				(Contribution) eObject);
 		MCommand mCommand = MCommandsFactory.INSTANCE.createCommand();
-		mCommand.setElementId("org.domainworkbench.command.produceArtefact");
+		mCommand.setElementId("org.domainworkbench.command.constructContribution");
 		Command command = commandService.getCommand(mCommand.getElementId());
 		ParameterizedCommand parameterizedCommand = ParameterizedCommand
 				.generateCommand(command, parameters);

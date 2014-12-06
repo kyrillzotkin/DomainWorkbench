@@ -1,11 +1,11 @@
 package org.domainworkbench.parts;
 
-import org.classupplier.Artefact;
+import org.classupplier.Contribution;
 import org.eclipse.jface.viewers.ILabelDecorator;
 import org.eclipse.jface.viewers.ILabelProviderListener;
 import org.eclipse.swt.graphics.Image;
 
-public class ArtefactStageDecorator implements ILabelDecorator {
+public class ContributionStageDecorator implements ILabelDecorator {
 
 	@Override
 	public void addListener(ILabelProviderListener listener) {
@@ -34,10 +34,11 @@ public class ArtefactStageDecorator implements ILabelDecorator {
 
 	@Override
 	public String decorateText(String text, Object element) {
-		if (element instanceof Artefact) {
-			return text + " ["
-					+ ((Artefact) element).getStage().toString().toLowerCase()
-					+ "]";
+		if (element instanceof Contribution) {
+			return text
+					+ " ["
+					+ ((Contribution) element).getStage().toString()
+							.toLowerCase() + "]";
 		}
 		return null;
 	}

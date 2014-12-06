@@ -24,9 +24,9 @@
    <extension
          point="org.eclipse.ui.commands">
       <commandParameterType
-            converter="org.domainworkbench.handlers.ArtefactConverter"
-            id="org.domainworkbench.commandParameterType.artefact"
-            type="org.classupplier.Artefact">
+            converter="org.domainworkbench.handlers.ContributionConverter"
+            id="org.domainworkbench.commandParameterType.contribution"
+            type="org.classupplier.Contribution">
       </commandParameterType>
       <commandParameterType
             converter="org.domainworkbench.handlers.ContextParameterValueConverter"

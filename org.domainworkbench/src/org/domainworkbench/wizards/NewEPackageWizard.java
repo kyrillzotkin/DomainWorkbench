@@ -29,7 +29,7 @@ public class NewEPackageWizard extends Wizard {
 		ePackage.setName(page.getName());
 		ePackage.setNsPrefix(page.getNsPrefix());
 		ePackage.setNsURI(page.getNsURI());
-		classuplier.getWorkspace().createArtefact(ePackage);
+		classuplier.getWorkspace().createContribution(ePackage);
 		return true;
 	}
 

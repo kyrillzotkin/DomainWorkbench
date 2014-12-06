@@ -77,7 +77,7 @@ public class NavigationView implements IEditingDomainProvider {
 				adapterFactory));
 		viewer.setLabelProvider(new DecoratingLabelProvider(
 				new AdapterFactoryLabelProvider(adapterFactory),
-				(ILabelDecorator) new ArtefactStageDecorator()));
+				(ILabelDecorator) new ContributionStageDecorator()));
 		viewer.setInput(classupplier.getWorkspace());
 
 		classupplier.getWorkspace().eAdapters().add(new AdapterImpl() {
