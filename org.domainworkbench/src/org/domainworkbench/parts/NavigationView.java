@@ -9,6 +9,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.classupplier.ClassSupplier;
+import org.classupplier.ClassSupplierPackage;
+import org.classupplier.Contribution;
 import org.classupplier.provider.ClassSupplierItemProviderAdapterFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.ui.di.Focus;
@@ -23,6 +25,7 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.impl.AdapterImpl;
 import org.eclipse.emf.ecore.provider.EcoreItemProviderAdapterFactory;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.util.EContentAdapter;
 import org.eclipse.emf.edit.domain.AdapterFactoryEditingDomain;
 import org.eclipse.emf.edit.domain.EditingDomain;
 import org.eclipse.emf.edit.domain.IEditingDomainProvider;
@@ -69,21 +72,39 @@ public class NavigationView implements IEditingDomainProvider {
 		initializeEditingDomain();
 	}
 
+	private EContentAdapter adapter = new EContentAdapter() {
+
+		@Override
+		public void notifyChanged(Notification msg) {
+			if (msg.getFeatureID(Contribution.class) == ClassSupplierPackage.CONTRIBUTION__STAGE
+					&& labelProvider != null)
+				Display.getCurrent().asyncExec(new Runnable() {
+
+					@Override
+					public void run() {
+						labelProvider.fireLabelProviderChanged();
+					}
+				});
+		}
+	};
+
+	private AdapterFactoryLabelProvider labelProvider;
+
 	@PostConstruct
 	public void createControls(Composite parent, final IEclipseContext context) {
 		parent.setLayout(new FillLayout(SWT.HORIZONTAL));
 		viewer = new TreeViewer(parent, SWT.BORDER);
-		viewer.setContentProvider(new AdapterFactoryContentProvider(
-				adapterFactory));
-		viewer.setLabelProvider(new DecoratingLabelProvider(
-				new AdapterFactoryLabelProvider(adapterFactory),
-				(ILabelDecorator) new ContributionStageDecorator()));
+		viewer.setContentProvider(new AdapterFactoryContentProvider(adapterFactory));
+		labelProvider = new AdapterFactoryLabelProvider(adapterFactory);
+		viewer.setLabelProvider(
+				new DecoratingLabelProvider(labelProvider, (ILabelDecorator) new ContributionStageDecorator()));
 		viewer.setInput(classupplier.getWorkspace());
 
+		classupplier.getWorkspace().eAdapters().add(adapter);
 		classupplier.getWorkspace().eAdapters().add(new AdapterImpl() {
 
 			@Override
-			public void notifyChanged(Notification msg) {
+			public void notifyChanged(final Notification msg) {
 				Display.getCurrent().asyncExec(new Runnable() {
 
 					@Override
@@ -99,22 +120,17 @@ public class NavigationView implements IEditingDomainProvider {
 			@Override
 			public void selectionChanged(SelectionChangedEvent event) {
 				ISelection selection = event.getSelection();
-				if (selection instanceof IStructuredSelection
-						&& ((IStructuredSelection) selection).size() == 1) {
-					Object selectedObject = ((IStructuredSelection) selection)
-							.getFirstElement();
+				if (selection instanceof IStructuredSelection && ((IStructuredSelection) selection).size() == 1) {
+					Object selectedObject = ((IStructuredSelection) selection).getFirstElement();
 					selectionService.setSelection(selectedObject);
-					context.set(IEditingDomainItemProvider.class,
-							(IEditingDomainItemProvider) adapterFactory.adapt(
-									selectedObject,
-									IEditingDomainItemProvider.class));
+					context.set(IEditingDomainItemProvider.class, (IEditingDomainItemProvider) adapterFactory
+							.adapt(selectedObject, IEditingDomainItemProvider.class));
 				}
 			}
 
 		});
 		context.set(IEditingDomainProvider.class, this);
-		menuService.registerContextMenu(viewer.getControl(),
-				"org.domainworkbench.popupmenu.navigator");
+		menuService.registerContextMenu(viewer.getControl(), "org.domainworkbench.popupmenu.navigator");
 	}
 
 	public void setSelectionToViewer(Collection<?> collection) {
@@ -123,8 +139,7 @@ public class NavigationView implements IEditingDomainProvider {
 			Runnable runnable = new Runnable() {
 				public void run() {
 					if (viewer != null) {
-						viewer.setSelection(new StructuredSelection(
-								theSelection.toArray()), true);
+						viewer.setSelection(new StructuredSelection(theSelection.toArray()), true);
 					}
 				}
 			};
@@ -139,32 +154,26 @@ public class NavigationView implements IEditingDomainProvider {
 	}
 
 	protected void initializeEditingDomain() {
-		adapterFactory = new ComposedAdapterFactory(
-				ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
-		adapterFactory
-				.addAdapterFactory(new ClassSupplierItemProviderAdapterFactory());
+		adapterFactory = new ComposedAdapterFactory(ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
+		adapterFactory.addAdapterFactory(new ClassSupplierItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new EcoreItemProviderAdapterFactory());
-		adapterFactory
-				.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 		BasicCommandStack commandStack = new BasicCommandStack();
 
 		commandStack.addCommandStackListener(new CommandStackListener() {
 			public void commandStackChanged(final EventObject event) {
 				shell.getDisplay().asyncExec(new Runnable() {
 					public void run() {
-						Command mostRecentCommand = ((CommandStack) event
-								.getSource()).getMostRecentCommand();
+						Command mostRecentCommand = ((CommandStack) event.getSource()).getMostRecentCommand();
 						if (mostRecentCommand != null) {
-							setSelectionToViewer(mostRecentCommand
-									.getAffectedObjects());
+							setSelectionToViewer(mostRecentCommand.getAffectedObjects());
 						}
 					}
 				});
 			}
 		});
 
-		editingDomain = new AdapterFactoryEditingDomain(adapterFactory,
-				commandStack, new HashMap<Resource, Boolean>());
+		editingDomain = new AdapterFactoryEditingDomain(adapterFactory, commandStack, new HashMap<Resource, Boolean>());
 	}
 
 	@Override

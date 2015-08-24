@@ -2,8 +2,8 @@ package org.domainworkbench.handlers;
 
 import org.classupplier.ClassSupplier;
 import org.domainworkbench.wizards.NewEPackageWizard;
-import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.core.di.annotations.CanExecute;
+import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.jface.window.IShellProvider;
 import org.eclipse.jface.wizard.WizardDialog;
 

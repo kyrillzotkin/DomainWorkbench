@@ -18,21 +18,21 @@ public class ContributionConverter extends AbstractParameterValueConverter {
 	}
 
 	private IEclipseContext getContext() {
-		return context = EclipseContextFactory.getServiceContext(FrameworkUtil
-				.getBundle(getClass()).getBundleContext());
+		return context = EclipseContextFactory
+				.getServiceContext(FrameworkUtil.getBundle(getClass()).getBundleContext());
 	}
 
 	@Override
-	public Object convertToObject(String parameterValue)
-			throws ParameterValueConversionException {
-		ClassSupplier s = context.get(ClassSupplier.class);
-		return s.getWorkspace().findContribution(parameterValue);
+	public Object convertToObject(String parameterValue) throws ParameterValueConversionException {
+		ClassSupplier supplier = context.get(ClassSupplier.class);
+		return supplier.getWorkspace().getContribution(parameterValue);
 	}
 
 	@Override
-	public String convertToString(Object parameterValue)
-			throws ParameterValueConversionException {
-		return ((Contribution) parameterValue).getProjectName();
+	public String convertToString(Object parameterValue) throws ParameterValueConversionException {
+		if (parameterValue instanceof Contribution)
+			return ((Contribution) parameterValue).getProjectName();
+		throw new ParameterValueConversionException("parameterValue is not Contribution");
 	}
 
 }

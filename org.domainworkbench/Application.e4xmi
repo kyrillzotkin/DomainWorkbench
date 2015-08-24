@@ -7,13 +7,13 @@
           <children xsi:type="basic:PartStack" xmi:id="_stwmwFAPEeKCFoUyE2qD2A" elementId="org.domainworkbench.partstack.0">
             <children xsi:type="basic:Part" xmi:id="_wEf5EFAPEeKCFoUyE2qD2A" elementId="org.domainworkbench.part.navigationView" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.parts.NavigationView" label="Navigator">
               <menus xsi:type="menu:PopupMenu" xmi:id="_rDROIHvxEeKE7OiBIilhyw" elementId="org.domainworkbench.popupmenu.navigator">
-                <children xsi:type="menu:DynamicMenuContribution" xmi:id="_bMGtEHnAEeKQ9siOG5fmtw" elementId="org.domainworkbench.dynmicmenucontribtion.0" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.ConstructContributionContribution"/>
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_7cymwECiEeWG_ZAeRuJeHg" elementId="org.domainworkbench.handledmenuitem.construct" label="Construct" command="_ByoQUHjkEeKkGYkVTzybKQ"/>
+                <children xsi:type="menu:DynamicMenuContribution" xmi:id="_1-IRwEC6EeWxs7sjvOd_6g" elementId="org.domainworkbench.dynamicmenucontribution.0" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.CreateChildContribution"/>
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_imL_wEpJEeWFM7loEGHm3Q" elementId="org.domainworkbench.handledmenuitem.remove" label="Remove" command="_NT5G0EpJEeWFM7loEGHm3Q"/>
               </menus>
             </children>
           </children>
-          <children xsi:type="basic:PartStack" xmi:id="_H7gcZ1AOEeKCFoUyE2qD2A" elementId="org.domainworkbench.partstack.1">
-            <tags>NoAutoCollapse</tags>
-          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_Rje0EEpGEeW1leXQ-5FE_A" elementId="org.domainworkbench.partstack.1"/>
         </children>
       </children>
     </children>
@@ -22,9 +22,6 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_wOXVMF8BEeKURZyjRQ1MuA" elementId="org.domainworkbench.handledmenuitem.0" label="New EPackage" command="_XkoYoF78EeKURZyjRQ1MuA"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_H7gcYFAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handledmenuitem.2" label="Save" iconURI="platform:/plugin/org.domainworkbench/icons/save_edit.gif" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_H7gcYVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handledmenuitem.3" label="Quit" command="_H7fOSlAOEeKCFoUyE2qD2A"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_wm-b0Hw2EeSd1s3SluD9ww" elementId="org.domainworkbench.handledmenuitem.n" label="Print parameter value" command="_yRjuUHw2EeSd1s3SluD9ww">
-          <parameters xmi:id="_UvaCkHw3EeSd1s3SluD9ww" elementId="org.domainworkbench.parameter.0" name="org.domainworkbench.commandparameter.0" value="menu-call-time value"/>
-        </children>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_H7gcYlAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.menu.1" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_H7gcY1AOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handledmenuitem.4" label="About" command="_H7f1WFAOEeKCFoUyE2qD2A"/>
@@ -40,8 +37,9 @@
   <handlers xmi:id="_H7f1VlAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handler.3" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.SaveHandler" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
   <handlers xmi:id="_H7f1WVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handler.2" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.AboutHandler" command="_H7f1WFAOEeKCFoUyE2qD2A"/>
   <handlers xmi:id="_lo6ywF78EeKURZyjRQ1MuA" elementId="org.domainworkbench.handler.0" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.NewEPackageHandler" command="_XkoYoF78EeKURZyjRQ1MuA"/>
-  <handlers xmi:id="_kktkUG4REeKwe8e-AiCkRA" elementId="org.domainworkbench.handler.1" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.ConstructContributionHandler" command="_ByoQUHjkEeKkGYkVTzybKQ"/>
-  <handlers xmi:id="_2SU1EHw2EeSd1s3SluD9ww" elementId="org.domainworkbench.handler.4" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.NHandler" command="_yRjuUHw2EeSd1s3SluD9ww"/>
+  <handlers xmi:id="_kktkUG4REeKwe8e-AiCkRA" elementId="org.domainworkbench.handler.1" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.ConstructHandler" command="_ByoQUHjkEeKkGYkVTzybKQ"/>
+  <handlers xmi:id="_hm2yYEGFEeWs3tpyaj47Jg" elementId="org.domainworkbench.handler.createChildHandler" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.CreateChildHandler" command="_HqfXAEGFEeWs3tpyaj47Jg"/>
+  <handlers xmi:id="_TRtwIEpJEeWFM7loEGHm3Q" elementId="org.domainworkbench.handler.remove" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.RemoveHandler" command="_NT5G0EpJEeWFM7loEGHm3Q"/>
   <bindingTables xmi:id="_H7f1UFAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.bindingtable.0" bindingContext="_H7fOQVAOEeKCFoUyE2qD2A">
     <bindings xmi:id="_H7f1UVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.keybinding.0" keySequence="M1+Q" command="_H7fOSlAOEeKCFoUyE2qD2A"/>
     <bindings xmi:id="_H7f1V1AOEeKCFoUyE2qD2A" elementId="org.domainworkbench.keybinding.2" keySequence="M1+S" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
@@ -55,12 +53,13 @@
   <commands xmi:id="_H7f1VVAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_H7f1WFAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
   <commands xmi:id="_XkoYoF78EeKURZyjRQ1MuA" elementId="org.domainworkbench.command.newEPackage" commandName="newEPackageCommand"/>
-  <commands xmi:id="_ByoQUHjkEeKkGYkVTzybKQ" elementId="org.domainworkbench.command.constructContribution" commandName="constructContributionCommand">
-    <parameters xmi:id="_mtNeAHtbEeKGu43LwUN-LA" elementId="org.domainworkbench.commandparameter.contribution" name="contribution" typeId="org.domainworkbench.commandParameterType.contribution" optional="false"/>
+  <commands xmi:id="_ByoQUHjkEeKkGYkVTzybKQ" elementId="org.domainworkbench.command.constructContribution" commandName="constructContributionCommand"/>
+  <commands xmi:id="_HqfXAEGFEeWs3tpyaj47Jg" elementId="org.domainworkbench.command.emfCreateCommand" commandName="createChild">
+    <parameters xmi:id="_cZCmIEiKEeWTbOsrnqkWSw" elementId="org.domainworkbench.commandparameter.eObject" name="EObject" typeId="org.domainworkbench.commandParameterType" optional="false"/>
+    <parameters xmi:id="_JTk0sEGFEeWs3tpyaj47Jg" elementId="org.domainworkbench.commandparameter.emfCreateCommand" name="EMF Create Command" typeId="org.domainworkbench.commandParameterType" optional="false"/>
+    <parameters xmi:id="_h1rN8EiKEeWTbOsrnqkWSw" elementId="org.domainworkbench.commandparameter.eFeature" name="EFeature" typeId="org.domainworkbench.commandParameterType" optional="false"/>
   </commands>
-  <commands xmi:id="_yRjuUHw2EeSd1s3SluD9ww" elementId="org.domainworkbench.command.n" commandName="sample">
-    <parameters xmi:id="_5E0x4Hw2EeSd1s3SluD9ww" elementId="org.domainworkbench.commandparameter.0" name="value" typeId="org.domainworkbench.commandParameterType2" optional="false"/>
-  </commands>
+  <commands xmi:id="_NT5G0EpJEeWFM7loEGHm3Q" elementId="org.domainworkbench.command.remove" commandName="remove"/>
   <addons xmi:id="_H7fORFAOEeKCFoUyE2qD2A" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_H7fORVAOEeKCFoUyE2qD2A" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_H7fORlAOEeKCFoUyE2qD2A" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

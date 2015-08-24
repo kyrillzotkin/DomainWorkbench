@@ -21,6 +21,6 @@ import org.eclipse.swt.widgets.Shell;
 public class AboutHandler {
 	@Execute
 	public void execute(@Named(IServiceConstants.ACTIVE_SHELL) Shell shell) {
-		MessageDialog.openInformation(shell, "About", "A workbench for any user's domain./n(c) Copyright Kirill Zotkin, 2011, 2013. All rights reserved.");
+		MessageDialog.openInformation(shell, "About", "Workbench for your domain.\n(c) Copyright Kirill Zotkin, 2011, 2013. All rights reserved.");
 	}
 }

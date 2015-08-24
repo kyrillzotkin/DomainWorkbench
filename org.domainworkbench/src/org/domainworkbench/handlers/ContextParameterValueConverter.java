@@ -11,24 +11,23 @@ public class ContextParameterValueConverter extends AbstractParameterValueConver
 
 	public ContextParameterValueConverter() {
 		super();
-		this.context = createContext();
+		this.context = getContext();
 	}
 
-	private IEclipseContext createContext() {
+	private IEclipseContext getContext() {
+		// return context = EclipseContextFactory
+		// .getServiceContext(FrameworkUtil.getBundle(getClass()).getBundleContext());
 		return context = EclipseContextFactory.create();
 	}
 
 	@Override
-	public Object convertToObject(String parameterValue)
-			throws ParameterValueConversionException {
+	public Object convertToObject(String parameterValue) throws ParameterValueConversionException {
 		return context.get(parameterValue);
 	}
 
 	@Override
-	public String convertToString(Object parameterValue)
-			throws ParameterValueConversionException {
-		String result = parameterValue.getClass().getName() + "@"
-				+ parameterValue.hashCode();
+	public String convertToString(Object parameterValue) throws ParameterValueConversionException {
+		String result = parameterValue.getClass().getName() + "@" + parameterValue.hashCode();
 		context.set(result, parameterValue);
 		return result;
 	}

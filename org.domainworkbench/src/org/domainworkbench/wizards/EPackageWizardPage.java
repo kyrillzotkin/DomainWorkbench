@@ -31,8 +31,8 @@ public class EPackageWizardPage extends WizardPage {
 
 	protected EPackageWizardPage() {
 		super("EPackageWizardPage");
-		setTitle("New Epackage");
-		setDescription("Create the new EPackage");
+		setTitle("New EPackage");
+		setDescription("Create a new EPackage");
 
 	}
 
