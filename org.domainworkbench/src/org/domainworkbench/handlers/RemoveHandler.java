@@ -1,16 +1,15 @@
 
 package org.domainworkbench.handlers;
 
+import javax.inject.Named;
+
+import org.eclipse.e4.core.di.annotations.CanExecute;
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.emf.common.command.Command;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.edit.command.RemoveCommand;
 import org.eclipse.emf.edit.domain.IEditingDomainProvider;
-
-import javax.inject.Named;
-
-import org.eclipse.e4.core.di.annotations.CanExecute;
 
 public class RemoveHandler {
 	@Execute

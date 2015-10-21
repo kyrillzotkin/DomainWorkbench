@@ -2,25 +2,36 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_H7fOQFAOEeKCFoUyE2qD2A" elementId="org.eclipse.e4.ide.application" bindingContexts="_H7fOQVAOEeKCFoUyE2qD2A">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_H7f1W1AOEeKCFoUyE2qD2A" elementId="org.domainworkbench.trimmedwindow.0" label="Domain Workbench" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_H7gcZFAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.perspectivestack.0">
-      <children xsi:type="advanced:Perspective" xmi:id="_H7gcZVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.perspective.work" label="Work">
+      <children xsi:type="advanced:Perspective" xmi:id="_H7gcZVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.perspective.work" selectedElement="_H7gcZlAOEeKCFoUyE2qD2A" label="Work">
+        <tags>Perspective</tags>
+        <tags>categoryTag:General</tags>
         <children xsi:type="basic:PartSashContainer" xmi:id="_H7gcZlAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.partsashcontainer" selectedElement="_stwmwFAPEeKCFoUyE2qD2A" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_stwmwFAPEeKCFoUyE2qD2A" elementId="org.domainworkbench.partstack.0">
-            <children xsi:type="basic:Part" xmi:id="_wEf5EFAPEeKCFoUyE2qD2A" elementId="org.domainworkbench.part.navigationView" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.parts.NavigationView" label="Navigator">
-              <menus xsi:type="menu:PopupMenu" xmi:id="_rDROIHvxEeKE7OiBIilhyw" elementId="org.domainworkbench.popupmenu.navigator">
-                <children xsi:type="menu:HandledMenuItem" xmi:id="_7cymwECiEeWG_ZAeRuJeHg" elementId="org.domainworkbench.handledmenuitem.construct" label="Construct" command="_ByoQUHjkEeKkGYkVTzybKQ"/>
-                <children xsi:type="menu:DynamicMenuContribution" xmi:id="_1-IRwEC6EeWxs7sjvOd_6g" elementId="org.domainworkbench.dynamicmenucontribution.0" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.CreateChildContribution"/>
-                <children xsi:type="menu:HandledMenuItem" xmi:id="_imL_wEpJEeWFM7loEGHm3Q" elementId="org.domainworkbench.handledmenuitem.remove" label="Remove" command="_NT5G0EpJEeWFM7loEGHm3Q"/>
+            <tags>newtablook</tags>
+            <tags>org.eclipse.e4.primaryNavigationStack</tags>
+            <children xsi:type="basic:Part" xmi:id="__7t2UF2EEeWof_oHdUAxag" elementId="org.domainworkbench.part.navigationView" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.parts.NavigationView" label="Navigator" iconURI="" closeable="true">
+              <tags>View</tags>
+              <menus xmi:id="__7udYF2EEeWof_oHdUAxag" elementId="org.domainworkbench.part.navigationView">
+                <tags>ViewMenu</tags>
               </menus>
+              <menus xsi:type="menu:PopupMenu" xmi:id="_F0EJwF2FEeWof_oHdUAxag" elementId="org.domainworkbench.popupmenu.navigator">
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_F0EJwV2FEeWof_oHdUAxag" elementId="org.domainworkbench.handledmenuitem.apply" label="Apply" command="_ByoQUHjkEeKkGYkVTzybKQ"/>
+                <children xsi:type="menu:DynamicMenuContribution" xmi:id="_F0EJwl2FEeWof_oHdUAxag" elementId="org.domainworkbench.dynamicmenucontribution.0" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.CreateChildContribution"/>
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_F0EJw12FEeWof_oHdUAxag" elementId="org.domainworkbench.handledmenuitem.remove" label="Remove" command="_NT5G0EpJEeWFM7loEGHm3Q"/>
+              </menus>
+              <toolbar xmi:id="__7udYV2EEeWof_oHdUAxag" elementId="org.domainworkbench.part.navigationView"/>
             </children>
           </children>
-          <children xsi:type="basic:PartStack" xmi:id="_Rje0EEpGEeW1leXQ-5FE_A" elementId="org.domainworkbench.partstack.1"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_Zg0X4GLNEeWt76mK58o2zQ" elementId="org.domainworkbench.partsashcontainer.0">
+            <children xsi:type="basic:PartStack" xmi:id="_E9x9AGKeEeWJHNP4osT6yQ" elementId="org.domainworkbench.partstack.editors"/>
+          </children>
         </children>
       </children>
     </children>
     <mainMenu xmi:id="_H7f1XFAOEeKCFoUyE2qD2A" elementId="menu:org.eclipse.ui.main.menu">
       <children xsi:type="menu:Menu" xmi:id="_H7f1XVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.menu.0" label="File">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_wOXVMF8BEeKURZyjRQ1MuA" elementId="org.domainworkbench.handledmenuitem.0" label="New EPackage" command="_XkoYoF78EeKURZyjRQ1MuA"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_H7gcYFAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handledmenuitem.2" label="Save" iconURI="platform:/plugin/org.domainworkbench/icons/save_edit.gif" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_H7gcYFAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handledmenuitem.2" label="Save" iconURI="platform:/plugin/org.domainworkbench/icons/save_edit.png" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_H7gcYVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handledmenuitem.3" label="Quit" command="_H7fOSlAOEeKCFoUyE2qD2A"/>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_H7gcYlAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.menu.1" label="Help">
@@ -29,7 +40,7 @@
     </mainMenu>
     <trimBars xmi:id="_H7gcaFAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.windowtrim.0">
       <children xsi:type="menu:ToolBar" xmi:id="_H7gcaVAOEeKCFoUyE2qD2A" elementId="toolbar:org.eclipse.ui.main.toolbar">
-        <children xsi:type="menu:HandledToolItem" xmi:id="_H7gca1AOEeKCFoUyE2qD2A" elementId="org.domainworkbench.toolbar.handleditem.1" iconURI="platform:/plugin/org.domainworkbench/icons/save_edit.gif" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_H7gca1AOEeKCFoUyE2qD2A" elementId="org.domainworkbench.toolbar.handleditem.1" iconURI="platform:/plugin/org.domainworkbench/icons/save_edit.png" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
       </children>
     </trimBars>
   </children>
@@ -37,7 +48,7 @@
   <handlers xmi:id="_H7f1VlAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handler.3" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.SaveHandler" command="_H7f1VVAOEeKCFoUyE2qD2A"/>
   <handlers xmi:id="_H7f1WVAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.handler.2" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.AboutHandler" command="_H7f1WFAOEeKCFoUyE2qD2A"/>
   <handlers xmi:id="_lo6ywF78EeKURZyjRQ1MuA" elementId="org.domainworkbench.handler.0" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.NewEPackageHandler" command="_XkoYoF78EeKURZyjRQ1MuA"/>
-  <handlers xmi:id="_kktkUG4REeKwe8e-AiCkRA" elementId="org.domainworkbench.handler.1" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.ConstructHandler" command="_ByoQUHjkEeKkGYkVTzybKQ"/>
+  <handlers xmi:id="_kktkUG4REeKwe8e-AiCkRA" elementId="org.domainworkbench.handler.1" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.ApplyContributionHandler" command="_ByoQUHjkEeKkGYkVTzybKQ"/>
   <handlers xmi:id="_hm2yYEGFEeWs3tpyaj47Jg" elementId="org.domainworkbench.handler.createChildHandler" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.CreateChildHandler" command="_HqfXAEGFEeWs3tpyaj47Jg"/>
   <handlers xmi:id="_TRtwIEpJEeWFM7loEGHm3Q" elementId="org.domainworkbench.handler.remove" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.handlers.RemoveHandler" command="_NT5G0EpJEeWFM7loEGHm3Q"/>
   <bindingTables xmi:id="_H7f1UFAOEeKCFoUyE2qD2A" elementId="org.domainworkbench.bindingtable.0" bindingContext="_H7fOQVAOEeKCFoUyE2qD2A">
@@ -49,11 +60,18 @@
     <children xmi:id="_H7fOQlAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_H7fOQ1AOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
+  <descriptors xmi:id="_iXZnYF2FEeWof_oHdUAxag" elementId="org.eclipse.ui.views.PropertySheet" label="%Views.PropertySheet" iconURI="platform:/plugin/org.eclipse.ui.views/$nl$/icons/full/eview16/prop_ps.png" category="org.eclipse.e4.secondaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_iXZnYV2FEeWof_oHdUAxag" elementId="org.eclipse.ui.views.PropertySheet">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_iXZnYl2FEeWof_oHdUAxag" elementId="org.eclipse.ui.views.PropertySheet"/>
+  </descriptors>
+  <descriptors xmi:id="_U6xs0GH8EeWjo7XNTF52kA" elementId="org.domainworkbench.part.eObjectView" label="EObject Editor" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.parts.EObjectView"/>
   <commands xmi:id="_H7fOSlAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
   <commands xmi:id="_H7f1VVAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_H7f1WFAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
   <commands xmi:id="_XkoYoF78EeKURZyjRQ1MuA" elementId="org.domainworkbench.command.newEPackage" commandName="newEPackageCommand"/>
-  <commands xmi:id="_ByoQUHjkEeKkGYkVTzybKQ" elementId="org.domainworkbench.command.constructContribution" commandName="constructContributionCommand"/>
+  <commands xmi:id="_ByoQUHjkEeKkGYkVTzybKQ" elementId="org.domainworkbench.command.applyContribution" commandName="applyContributionCommand"/>
   <commands xmi:id="_HqfXAEGFEeWs3tpyaj47Jg" elementId="org.domainworkbench.command.emfCreateCommand" commandName="createChild">
     <parameters xmi:id="_cZCmIEiKEeWTbOsrnqkWSw" elementId="org.domainworkbench.commandparameter.eObject" name="EObject" typeId="org.domainworkbench.commandParameterType" optional="false"/>
     <parameters xmi:id="_JTk0sEGFEeWs3tpyaj47Jg" elementId="org.domainworkbench.commandparameter.emfCreateCommand" name="EMF Create Command" typeId="org.domainworkbench.commandParameterType" optional="false"/>
