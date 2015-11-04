@@ -7,8 +7,8 @@ import java.util.Set;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecp.view.spi.model.VControl;
 import org.eclipse.emf.ecp.view.spi.model.VFeaturePathDomainModelReference;
 import org.eclipse.emf.ecp.view.spi.model.VView;
@@ -38,20 +38,21 @@ public class ViewProvider implements IViewProvider {
 	}
 
 	private boolean isInvalidFeature(EStructuralFeature feature) {
-		return isContainerReference(feature) || isTransient(feature); // ||
+		return // isContainerReference(feature); //||
+						isTransient(feature); // ||
 		// isVolatile(feature);
 	}
 
-	private boolean isContainerReference(EStructuralFeature feature) {
-		if (feature instanceof EReference) {
-			final EReference reference = (EReference) feature;
-			if (reference.isContainer()) {
-				return true;
-			}
-		}
-
-		return false;
-	}
+	// private boolean isContainerReference(EStructuralFeature feature) {
+	// if (feature instanceof EReference) {
+	// final EReference reference = (EReference) feature;
+	// if (reference.isContainer()) {
+	// return true;
+	// }
+	// }
+	//
+	// return false;
+	// }
 
 	private boolean isTransient(EStructuralFeature feature) {
 		return feature.isTransient();
@@ -79,7 +80,7 @@ public class ViewProvider implements IViewProvider {
 
 	@Override
 	public double canProvideViewModel(EObject eObject, VViewModelProperties properties) {
-		return 1;
+		return 1d;
 	}
 
 	@Override
@@ -100,6 +101,8 @@ public class ViewProvider implements IViewProvider {
 			view.getChildren().add(control);
 		}
 		composedAdapterFactory.dispose();
+		view.setRootEClass(eObject.eClass());
+		view.setLoadingProperties(EcoreUtil.copy(properties));
 		return view;
 	}
 

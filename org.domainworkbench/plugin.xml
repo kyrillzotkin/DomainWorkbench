@@ -1,83 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="3.4"?>
-<plugin>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?><plugin>
 
-   <extension
-         id="product"
-         point="org.eclipse.core.runtime.products">
-      <product
-            name="org.domainworkbench"
-            application="org.domainworkbench.application">
-         <property
-               name="applicationCSS"
-               value="platform:/plugin/org.domainworkbench/css/default.css">
+   <extension id="product" point="org.eclipse.core.runtime.products">
+      <product application="org.domainworkbench.application" name="org.domainworkbench">
+         <property name="applicationCSS" value="platform:/plugin/org.domainworkbench/css/default.css">
          </property>
-         <property
-               name="applicationXMI"
-               value="org.domainworkbench/Application.e4xmi">
+         <property name="applicationXMI" value="org.domainworkbench/Application.e4xmi">
          </property>
-         <property
-               name="rendererFactoryUri"
-               value="bundleclass://org.domainworkbench/org.domainworkbench.renderer.WorkbenchRendererFactory">
+         <property name="appName" value="org.domainworkbench">
          </property>
-         <property
-               name="appName"
-               value="org.domainworkbench">
-         </property>
-         <property
-               name="clearPersistedState"
-               value="true">
+         <property name="clearPersistedState" value="true">
          </property>
       </product>
    </extension>
-   <extension
-         id="application"
-         point="org.eclipse.core.runtime.applications">
-      <application
-            cardinality="singleton-global"
-            thread="main"
-            visible="true">
-         <run
-               class="org.domainworkbench.Application">
+   <extension id="application" point="org.eclipse.core.runtime.applications">
+      <application cardinality="singleton-global" thread="main" visible="true">
+         <run class="org.domainworkbench.Application">
          </run>
       </application>
    </extension>
-   <extension
-         point="org.eclipse.ui.commands">
-      <commandParameterType
-            converter="org.domainworkbench.handlers.ContextParameterValueConverter"
-            id="org.domainworkbench.commandParameterType"
-            type="java.lang.Object">
+   <extension point="org.eclipse.ui.commands">
+      <commandParameterType converter="org.domainworkbench.handlers.ContextParameterValueConverter" id="org.domainworkbench.commandParameterType" type="java.lang.Object">
       </commandParameterType>
    </extension>
-   <extension
-         point="org.eclipse.core.runtime.adapters">
-      <factory
-            adaptableType="org.eclipse.emf.ecore.EObject"
-            class="org.domainworkbench.parts.NavigationView">
-         <adapter
-               type="org.eclipse.ui.views.properties.IPropertySheetPage">
+   <extension point="org.eclipse.core.runtime.adapters">
+      <factory adaptableType="org.eclipse.emf.ecore.EObject" class="org.domainworkbench.parts.NavigationView">
+         <adapter type="org.eclipse.ui.views.properties.IPropertySheetPage">
          </adapter>
       </factory>
    </extension>
-   <extension
-         point="org.eclipse.ui.perspectiveExtensions">
-      <perspectiveExtension
-            targetID="org.domainworkbench.perspective.work">
-         <view
-               id="org.domainworkbench.part.navigationView"
-               minimized="false"
-               relationship="stack"
-               relative="org.eclipse.ui.editorss"
-               visible="true">
+   <extension point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension targetID="org.domainworkbench.perspective.work">
+         <view id="org.domainworkbench.part.navigationView" minimized="false" relationship="stack" relative="org.eclipse.ui.editorss" visible="true">
          </view>
       </perspectiveExtension>
    </extension>
-   <extension
-         point="org.eclipse.emf.ecp.ui.view.viewModelProviders">
-      <viewModelProvider
-            class="org.domainworkbench.parts.ViewProvider">
+   <extension point="org.eclipse.emf.ecp.ui.view.viewModelProviders">
+      <viewModelProvider class="org.domainworkbench.parts.ViewProvider">
       </viewModelProvider>
    </extension>
+
 
 </plugin>

@@ -60,13 +60,7 @@
     <children xmi:id="_H7fOQlAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_H7fOQ1AOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
-  <descriptors xmi:id="_iXZnYF2FEeWof_oHdUAxag" elementId="org.eclipse.ui.views.PropertySheet" label="%Views.PropertySheet" iconURI="platform:/plugin/org.eclipse.ui.views/$nl$/icons/full/eview16/prop_ps.png" category="org.eclipse.e4.secondaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <menus xmi:id="_iXZnYV2FEeWof_oHdUAxag" elementId="org.eclipse.ui.views.PropertySheet">
-      <tags>ViewMenu</tags>
-    </menus>
-    <toolbar xmi:id="_iXZnYl2FEeWof_oHdUAxag" elementId="org.eclipse.ui.views.PropertySheet"/>
-  </descriptors>
-  <descriptors xmi:id="_U6xs0GH8EeWjo7XNTF52kA" elementId="org.domainworkbench.part.eObjectView" label="EObject Editor" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.parts.EObjectView"/>
+  <descriptors xmi:id="_U6xs0GH8EeWjo7XNTF52kA" elementId="org.domainworkbench.part.eObjectView" label="EObject Editor" allowMultiple="true" closeable="true" contributionURI="bundleclass://org.domainworkbench/org.domainworkbench.parts.EObjectView"/>
   <commands xmi:id="_H7fOSlAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
   <commands xmi:id="_H7f1VVAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_H7f1WFAOEeKCFoUyE2qD2A" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
